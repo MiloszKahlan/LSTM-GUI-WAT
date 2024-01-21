@@ -112,6 +112,8 @@ Then Press 'Start" to start the training
 
 Every 1000 iterations a validation is performed at which point, Validation Loss will be calculated and a checkpoint is generated, which will be used to sample the model.
 
+![Example of RNN running](https://github.com/MiloszKahlan/RNN-GUI-WAT/blob/main/examples/training_running.png)
+
 ## Step 3: Sampling the model
 
 In order to sample from the model, switch to the sampling tab. There enter the name of the checkpoint you want to sample from (they are stored in the cv folder of torch-rnn), as well as the desired sample length and gpu backend type.
@@ -133,3 +135,6 @@ In order to convert the sample to music, revert the process: result.txt -> uncom
 2. Incorporate the functionality of MIDICSV
 3. Add input sanitizing to textboxes and handling for non-gpu cases
 4. TBD
+
+# Examples
+For examples of training data, training files and generated .midi files, refer to the examples folder of the repository
